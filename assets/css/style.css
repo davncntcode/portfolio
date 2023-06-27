@@ -212,9 +212,9 @@ div.content {
     margin: 0px 20px;
 }
 
-.slick-slide img {
+/*.slick-slide img {
     width: 100%;
-}
+}*/
 
 .slick-slider
 {
@@ -297,7 +297,8 @@ div.content {
 .slick-slide img
 {
 /*    display: block;*/
-    width: 70%;
+    width: 80%;
+    aspect-ratio: 3/2;object-fit: contain;
     height: auto;
 }
 .slick-slide.slick-loading img
@@ -325,6 +326,7 @@ div.content {
 .slick-arrow.slick-hidden {
     display: none;
 }
+
 
 /*carousel end ------------------------------------------------*/
 /*.about-container #about-title
@@ -356,10 +358,14 @@ div.content {
 }*/
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
-  .sidebar a {
-/*    text-align: center;*/
+@media screen and (max-width: 768px) {
+ /* .sidebar a {
     display: none;
-  }
+  }*/
+#menumenu
+{
+  display: none;
+}
+
 }
 
