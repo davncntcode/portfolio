@@ -25,8 +25,8 @@
 		<div class="home-container">
 			<div class="hello">
 				<?php
-				    if ($_SERVER["REQUEST_METHOD"] == "GET") {
-				      $name = $_GET["name-inp"];
+				    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+				      $name = $_POST["name-inp"];
 				      echo '<h1 id="user-name" style="color:whitesmoke;">Hello, ' . $name . '!</h1>';
 				    }
 				    else {
